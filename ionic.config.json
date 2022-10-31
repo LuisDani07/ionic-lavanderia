@@ -1,0 +1,7 @@
+{
+  "name": "appLavanderia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

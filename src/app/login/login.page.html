@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>LOGIN</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+
+  <ion-card>
+    <ion-card-header>
+      <form [formGroup]="formularioLogin">
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input formControlName="Nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contrasena</ion-label>
+          <ion-input formControlName="Contrasena" type="password"></ion-input>
+        </ion-item>
+    
+      </form>
+      <br>
+      <ion-button [routerLink]="['/index']">Iniciar secion</ion-button>
+    </ion-card-header>
+  </ion-card>
+
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end">
+      <ion-button>Registrarse</ion-button>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

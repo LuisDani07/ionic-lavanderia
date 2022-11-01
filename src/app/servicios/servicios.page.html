@@ -1,34 +1,43 @@
+
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="success">
     <ion-title>servicios</ion-title>
   </ion-toolbar>
 </ion-header>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>  <ion-item>
+      <ion-label>colonia</ion-label>
+      <ion-input placeholder="ingrese colonia "></ion-input>
+    </ion-item></ion-col>
+    <ion-col>  <ion-item>
+      <ion-label>calle</ion-label>
+      <ion-input placeholder="ingrese calle"></ion-input>
+    </ion-item></ion-col>
+    <ion-col>  <ion-item>
+      <ion-label>codigo postal</ion-label>
+      <ion-input placeholder="ingrese codigo postal "></ion-input>
+    </ion-item></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>  
+      <ion-item>
+        <ion-label>celular </ion-label>
+        <ion-input type="tel" placeholder="888-888-8888"></ion-input>
+      </ion-item></ion-col>
+    <ion-col><ion-datetime [isDateEnabled]="isWeekday"></ion-datetime></ion-col>
+  </ion-row>
+</ion-grid>
 <ion-list>
-  <ion-item>
-    <ion-label>colonia</ion-label>
-    <ion-input placeholder="ingrese colonia "></ion-input>
-  </ion-item>
 
-  <ion-item>
-    <ion-label>calle</ion-label>
-    <ion-input placeholder="ingrese calle"></ion-input>
-  </ion-item>
+  <ion-button   color="success" expand="block">Enviar</ion-button>
 
-  <ion-item>
-    <ion-label>codigo postal</ion-label>
-    <ion-input placeholder="ingrese codigo postal "></ion-input>
-  </ion-item>
 
-  
 
-  
-  <ion-item>
-    <ion-label>celular </ion-label>
-    <ion-input type="tel" placeholder="888-888-8888"></ion-input>
-  </ion-item>
-</ion-list>
-<h3>fecha</h3>
-<ion-datetime [isDateEnabled]="isWeekday"></ion-datetime>
+
+
+
 
 
 
